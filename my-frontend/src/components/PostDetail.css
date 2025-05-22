@@ -1,0 +1,39 @@
+/* src/components/PostDetail.css */
+
+.post-detail-container {
+    margin-top: 20px; /* 상단 여백 */
+    padding: 20px; /* 내부 여백 */
+    border: 1px solid #ccc; /* 테두리 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    background-color: #fff; /* 배경색 */
+}
+
+.post-detail-container h2 {
+    margin-top: 0; /* 제목 상단 여백 제거 */
+    color: #333; /* 제목 색상 */
+    border-bottom: 1px solid #eee; /* 제목 아래 구분선 */
+    padding-bottom: 10px; /* 구분선과 제목 사이 여백 */
+    margin-bottom: 20px; /* 제목 하단 여백 */
+}
+
+.post-detail-content h3 {
+    margin: 0 0 5px 0; /* 작성자 이름 여백 */
+    color: #555; /* 작성자 이름 색상 */
+}
+
+.post-detail-content p {
+    margin: 0 0 15px 0; /* 내용 여백 */
+    color: #333; /* 내용 색상 */
+    line-height: 1.6; /* 줄 간격 */
+}
+
+.post-detail-content small {
+    color: #888; /* 날짜 색상 */
+    display: block; /* 날짜를 다음 줄에 표시 */
+}
+
+/* 로딩/에러 메시지 스타일 */
+.post-detail-container.error {
+    color: #e74c3c; /* 에러 메시지 색상 */
+    font-weight: bold;
+}

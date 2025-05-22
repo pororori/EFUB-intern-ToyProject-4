@@ -1,0 +1,55 @@
+/* src/components/PostItem.css */
+
+.post-item-wrapper {
+    border: 1px solid #ddd; /* 개별 아이템 테두리 */
+    padding: 15px; /* 개별 아이템 내부 여백 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    background-color: #f9f9f9; /* 개별 아이템 배경색 */
+    display: flex; /* 내용과 삭제 버튼을 가로로 배치 */
+    justify-content: space-between; /* 내용과 버튼을 양쪽 끝으로 */
+    align-items: center; /* 세로 중앙 정렬 */
+}
+
+.post-item-wrapper:hover {
+    background-color: #f0f0f0; /* 마우스 오버 시 배경색 변경 */
+}
+
+.post-item-link {
+     text-decoration: none; /* Link의 밑줄 제거 */
+     color: inherit; /* 부모 요소의 글자색 상속 */
+     flex-grow: 1; /* 남은 공간 모두 사용하도록 설정 */
+     margin-right: 15px; /* 내용과 버튼 사이 간격 */
+     cursor: pointer; /* 링크처럼 마우스 오버 시 커서 변경 */
+}
+
+.post-item-content h4 {
+    margin: 0 0 5px 0; /* 작성자 이름 여백 */
+    color: #555; /* 작성자 이름 색상 */
+}
+
+.post-item-content p {
+    margin: 0 0 10px 0; /* 내용 여백 */
+    color: #333; /* 내용 색상 */
+    line-height: 1.5; /* 줄 간격 */
+}
+
+.post-item-content small {
+    color: #888; /* 날짜 색상 */
+    display: block; /* 날짜를 다음 줄에 표시 */
+}
+
+/* 삭제 버튼 스타일 */
+.post-item-wrapper .delete-button { /* .post-item-wrapper 안의 .delete-button */
+    background-color: #e74c3c; /* 버튼 배경색 */
+    color: white; /* 버튼 글자색 */
+    border: none; /* 테두리 없음 */
+    padding: 5px 10px; /* 버튼 내부 여백 */
+    border-radius: 4px; /* 모서리 둥글게 */
+    cursor: pointer; /* 클릭 가능한 것처럼 마우스 오버 시 커서 변경 */
+    font-size: 0.8em; /* 글자 크기 작게 */
+    flex-shrink: 0; /* 공간이 부족해도 줄어들지 않도록 설정 */
+}
+
+.post-item-wrapper .delete-button:hover {
+    background-color: #c0392b; /* 마우스 오버 시 배경색 변경 */
+}
